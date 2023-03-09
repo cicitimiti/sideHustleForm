@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="regbox">
+    
+<form action="#" method="#">
+        <label for="fname"><b>Full Name</b></label>
+        <input type="text" placeholder="enter full name" id="name" required>
+
+        <label for="phone"><b>Phone Number</b></label>
+        <input type="tel" id="phone" name="phone" placeholder="1234-567-8912" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required>
+
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" name="email" id="email" required>
+
+        <label for="gender"><b>Select Gender</b></label>
+        <select name="gender" id="gender">
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="other">other</option>
+        </select>
+
+        <label for="pwd">Password</label>
+        <input type="password" id="pwd" name="pwd" required>
+        
+        <div class="button">
+            <button id="submit" onclick="message()">submit</button>
+        </div>
+        <div class="message">
+            <div class="success" id="success">
+                Your Submission was sent successfully!
+            </div>
+            <div class="danger" id="danger">
+                Field cannot be Empty!
+            </div>
+        </div>
+</form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

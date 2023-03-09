@@ -1,0 +1,82 @@
+body {
+    background-color: #272b2a;
+    font-family: 'Arial;
+}
+.regbox {
+    width: 360px;
+    height: 708px;
+    margin: auto;
+    background-color: rgb(175, 181, 184);
+    border-radius: 3px;
+}
+
+
+
+form {
+   width: 300px;
+   margin-left: 20px;
+   padding-top: 50px;
+}
+
+form label {
+   display: flex;
+   margin-top: 20px;
+   font-size: 18px;
+}
+form input {
+   width: 100%;
+   padding: 7px;
+   border: none;
+   border: 1px solid gray;
+   border-radius: 6px;
+   outline: none;
+}
+
+button {
+   width: 320px;
+   height: 35px;
+   margin-top: 20px;
+   border: none;
+   cursor: pointer;
+   background-color: #49c1a2;
+   color: white;
+   font-size: 18px;
+}
+
+button:hover {
+   opacity: 0.8;
+}
+
+.message {
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.message .success {
+    font-size: 20px;
+    color: rgb(21, 172, 21);
+    position: absolute;
+    animation: buttons .3s linear;
+    display: none;
+}
+.message .danger {
+    font-size: 20px;
+    color: rgb(188, 8, 8);
+    position: absolute;
+    transition: .3s;
+    animation: buttons .3s linear;
+    display: none;
+}
+@keyframes buttons {
+    0%{
+        transform: scale(0.1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
